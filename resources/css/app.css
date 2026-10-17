@@ -1,0 +1,17 @@
+/* ==========================================================
+   PORTOFOLIO ZALA RISKY PRATAMA - MASTER STYLESHEET
+   File: resources/css/app.css
+   Keterangan: Entry point utama yang mengimpor seluruh modul CSS
+   ========================================================== */
+
+/* 1. Desain Sistem & Variabel Warna */
+@import './variables.css';
+
+/* 2. Tata Letak Dasar, Navbar, & Footer */
+@import './layout.css';
+
+/* 3. Komponen UI (Kartu Kaca, Tombol, Badges, dll.) */
+@import './components.css';
+
+/* 4. Pengaturan Responsif (Tablet & Mobile) */
+@import './responsive.css';

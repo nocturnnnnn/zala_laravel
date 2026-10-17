@@ -1,0 +1,177 @@
+/* ==========================================================
+   2. LAYOUT & GLOBAL STYLES
+   File: resources/css/layout.css
+   Keterangan: Mengatur reset dasar, container, navbar, dan footer
+   ========================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-body);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: 
+        radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.08) 0%, transparent 60%),
+        radial-gradient(circle at 90% 90%, rgba(255, 255, 255, 0.03) 0%, transparent 45%),
+        linear-gradient(to bottom, rgba(5, 5, 5, 0.4), rgba(5, 5, 5, 0.95));
+    background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    width: 100%;
+}
+
+/* Header & Navbar */
+header.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(5, 5, 5, 0.85);
+    border-bottom: 1px solid var(--border-glass);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 76px;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--text-heading);
+    letter-spacing: -0.02em;
+    transition: all 0.3s ease;
+}
+
+.brand-logo:hover {
+    color: #ffffff;
+    opacity: 0.95;
+}
+
+.brand-badge-frame {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #000000;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.08);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.brand-logo:hover .brand-badge-frame {
+    border-color: #ffffff;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.28);
+    transform: scale(1.05);
+}
+
+.brand-badge-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: contrast(1.15) brightness(1.05);
+}
+
+.brand-name {
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+}
+
+.brand-suffix {
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-left: 1px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    list-style: none;
+}
+
+.nav-link {
+    padding: 0.55rem 1rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-body);
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    border: 1px solid transparent;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.nav-link.active {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    font-weight: 600;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
+}
+
+/* Main Content */
+main.main-content {
+    flex: 1;
+    padding: 3rem 0 4.5rem;
+}
+
+/* Footer */
+footer.site-footer {
+    border-top: 1px solid var(--border-glass);
+    background: rgba(4, 4, 6, 0.85);
+    padding: 2.25rem 0;
+    text-align: center;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.footer-tag {
+    color: #a1a1aa;
+    font-weight: 500;
+}

@@ -1,0 +1,64 @@
+/* ==========================================================
+   4. RESPONSIVE DESIGN (Media Queries)
+   File: resources/css/responsive.css
+   Keterangan: Penataan tata letak untuk tablet dan mobile
+   ========================================================== */
+
+/* 1. Navbar Mobile Breakpoint */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 1.25rem 0;
+        gap: 1rem;
+    }
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* 2. Hero Section & Kontak Breakpoint */
+@media (max-width: 820px) {
+    .hero-card {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+    }
+    .hero-card .hero-text {
+        order: 2;
+    }
+    .hero-card .avatar-container {
+        order: 1;
+    }
+    .hero-card .hero-text > div {
+        justify-content: center;
+    }
+    .contact-grid {
+        grid-template-columns: 1fr !important;
+    }
+    div[style*="grid-template-columns: 1fr 1.25fr"] {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* 3. Profil & Detail Akademik Breakpoint */
+@media (max-width: 860px) {
+    .profile-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .academic-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .col-span-2 {
+        grid-column: span 1 !important;
+    }
+    div[style*="grid-template-columns: 1fr 2fr"] {
+        grid-template-columns: 1fr !important;
+    }
+    div[style*="grid-template-columns: 1fr 1fr"] {
+        grid-template-columns: 1fr !important;
+    }
+    div[style*="grid-column: span 2"] {
+        grid-column: span 1 !important;
+    }
+}

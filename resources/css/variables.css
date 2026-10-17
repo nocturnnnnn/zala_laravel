@@ -1,0 +1,27 @@
+/* ==========================================================
+   1. VARIABLES & DESIGN TOKENS (Noir & Platinum Monochrome)
+   File: resources/css/variables.css
+   Keterangan: Pusat pengaturan warna, background, dan efek glow
+   ========================================================== */
+:root {
+    --bg-body: #050505;
+    --bg-surface: #0c0c0e;
+    --bg-card: rgba(16, 16, 18, 0.75);
+    --bg-card-hover: rgba(24, 24, 28, 0.88);
+    --border-glass: rgba(255, 255, 255, 0.1);
+    --border-glass-light: rgba(255, 255, 255, 0.18);
+    --border-glow: rgba(255, 255, 255, 0.35);
+    
+    --primary: #ffffff;
+    --primary-light: #e4e4e7;
+    --primary-glow: rgba(255, 255, 255, 0.15);
+    --accent-cyan: #e2e8f0;
+    --accent-emerald: #ffffff;
+    --accent-amber: #d4d4d8;
+    --laravel-red: #ffffff;
+
+    --text-heading: #ffffff;
+    --text-body: #a1a1aa;
+    --text-muted: #71717a;
+    --text-subtle: #52525b;
+}
